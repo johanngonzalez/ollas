@@ -1,0 +1,97 @@
+
+@font-face {
+    font-family: 'Estandar Rounded';
+    src: url('../fonts/EstandarRounded.woff2') format('woff2'),
+        url('../fonts/EstandarRounded.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EstandarRoundedBold';
+    src: url('../fonts/EstandarRoundedBold.woff2') format('woff2'),
+        url('../fonts/EstandarRoundedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+body {
+
+    font-family: @primaryFont;
+
+    a {
+
+      &:hover, &:focus, &:active {
+
+        text-decoration: none;
+
+      }
+
+    }
+}
+
+// Section
+//-----------------------
+
+section {
+
+
+  // Section Title
+
+  .section-title {
+
+
+  }
+
+  .section-description {
+
+    text-align: center;
+    
+  }
+
+}
+
+// Page Header
+//-----------------------
+
+@pageHeaderHeightPhone: 120px;
+@pageHeaderHeightTablet: 180px;
+
+.page-header {
+
+  background-color: #CCC;
+  background-size: cover;
+  margin: 0 0 40px 0;
+
+  height: @pageHeaderHeightPhone;
+
+  @media @tablet {
+
+  height: @pageHeaderHeightTablet;
+
+  }
+
+  .aligned-content {
+
+    height: @pageHeaderHeightPhone;
+
+    @media @tablet {
+
+    height: @pageHeaderHeightTablet;
+
+    }
+
+  }
+
+  h1 {
+
+    margin: 0;
+    color: @white;
+
+  }
+
+}
+
+

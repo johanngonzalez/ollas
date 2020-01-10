@@ -1,0 +1,50 @@
+// Grid settings
+// -------------------------
+
+@main-sm-columns:       @grid-columns;
+@sidebar-sm-columns:    4;
+
+
+// Colors
+// -------------------------
+
+@brand-primary:            #1694c8;
+
+@white: 				   #FFFFFF;
+@black:					   #000000;
+
+
+
+
+// Glyphicons path
+// -------------------------
+
+@icon-font-path:        "../vendor/bootstrap/fonts/";
+
+// Typography
+// -------------------------
+
+
+@primaryFont: ;
+@secondaryFont: ;
+
+
+// Media Queries
+// -------------------------
+
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1280px;
+@xlg-min: 1281px;
+
+
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+@phone:          ~"only screen and (min-width: @{xs-min})";
+@tablet:         ~"only screen and (min-width: @{sm-min})";
+@desktop:        ~"only screen and (min-width: @{md-min})";
+@large:          ~"only screen and (min-width: @{lg-min})";
+@xlarge:          ~"only screen and (min-width: @{xlg-min})";

@@ -1,0 +1,915 @@
+
+// Home
+// --------------------------
+
+
+body {
+
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+}
+
+.banner {
+
+
+	position: absolute;
+	width: 100%;
+	top: 68px;
+
+	background-color: #c69d3a;
+	border: none;
+
+	display: none;
+
+	@media @tablet {
+
+	display: block;
+	
+	}
+
+	.navbar-header {
+
+		display: none !important;
+
+	}
+
+	.navbar-nav {
+
+		float: none !important;
+		text-align: center !important;
+
+
+	
+	}
+
+	.nav > li {
+
+		display: inline-block;
+		float: none !important;
+
+		text-transform: uppercase;
+
+		font-size: 1.4em;
+
+		@media @desktop {
+
+		font-size: 1.8em;
+
+		}
+
+		font-weight: normal !important;
+
+		a {
+
+			color: @white;
+			font-family: 'Estandar Rounded';
+
+    		border-right: 2px solid #f3e44a;
+
+    		padding: 11px 28px 5px 28px;
+
+    		margin: 7px 0 7px 0;
+
+		}
+
+
+	}
+
+	.navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+
+		background-color: transparent !important;
+		color: @white !important;
+
+	}
+
+	.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+
+		color: @white !important;
+
+	}
+
+}
+
+section {
+
+	margin-bottom: 0;
+	color: @white;
+
+}
+
+.ornaments, section {
+
+	background-repeat: no-repeat;
+
+}
+
+.gform_wrapper {
+
+    padding: 0% 7%;
+
+    input, textarea {
+
+    	color: @black !important;
+    }
+
+    textarea {
+
+    	@media @desktop {
+
+    	height: 230px;
+
+    	}
+    }
+
+    ul.gfield_checkbox {
+
+    	@media @desktop {
+
+		float: right !important;
+		width: 70% !important;
+		margin-top: -45px !important;
+
+    	}
+    }
+
+}
+
+
+.gfield_label, .gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
+
+
+	font-family: 'Estandar Rounded';
+	font-weight: normal !important;
+
+	font-size: 1.3em !important;
+
+	@media @desktop {
+
+	font-size: 1.7em !important;
+
+	}	
+
+
+}
+
+.gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
+
+	@media @tablet {
+	
+	display: inline;
+	
+	}
+
+}
+
+ul.gfield_checkbox label {
+
+	font-weight: normal !important;
+
+}
+
+.gform_wrapper .gfield_checkbox li label, .gform_wrapper .gfield_radio li label {
+
+	@media @desktop {
+
+	font-size: 1em !important;
+
+	}
+
+}
+
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .gform_wrapper textarea {
+
+    padding: 12px 12px 8px 12px !important;
+
+    @media @desktop {
+
+    font-size: 1.6em !important;
+
+	}
+}
+
+.gform_wrapper ul li.field_description_below div.ginput_container_checkbox, .gform_wrapper ul li.field_description_below div.ginput_container_radio {
+
+	margin-top: 8px !important;
+
+}
+
+.gform_wrapper .top_label div.ginput_container {
+
+    margin-top: 4px !important;
+}
+
+li.gchoice_1_6_1 {
+
+    margin-right: 20px !important;
+
+}
+
+.gform_wrapper .gform_button {
+
+	background-color: transparent !important;
+	border: 2px solid @white !important;
+	font-family: 'Estandar Rounded' !important;
+	font-size: 2em !important;
+	text-transform: uppercase;
+	color: @white !important;
+	border-radius: 0 !important;
+
+	@media @desktop {
+	
+	padding: 8px 16px 4px 16px !important;
+	
+	}
+	
+}
+
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit], .gform_wrapper .gform_page_footer input.button, .gform_wrapper .gform_page_footer input[type=submit] {
+
+    margin: 0 auto !important;
+    position: relative !important;
+    display: block !important;
+}
+
+li.gfield {
+
+	margin-bottom: 30px !important;
+
+}
+
+.gform_wrapper .gform_footer {
+
+	margin: 0 !important;
+	padding: 0 !important;
+
+}
+
+input, textarea {
+
+	border: none !important;
+	font-family: 'Estandar Rounded' !important;
+
+
+}
+
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+
+	margin-top: -6px !important;
+}
+
+
+
+img.centered-img {
+
+	position: relative;
+	margin: 0 auto;
+	display: block;
+
+}
+
+h1 {
+
+	margin: 0;
+	padding: 0;
+
+	font-size: 2em;
+
+	font-family: 'Estandar Rounded';
+	text-transform: uppercase;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	@media @tablet {
+
+	font-size: 2.4em;
+	margin-bottom: 30px;
+
+	}
+
+	@media @desktop {
+
+	font-size: 3em;
+
+	margin-top: 20px;
+	margin-bottom: 40px;
+
+	}
+
+	@media @large {
+
+	font-size: 4em;
+
+	margin-top: 20px;
+	margin-bottom: 40px;
+
+	}
+
+	br {
+
+		@media @desktop {
+
+		display: none;
+
+		}
+	}
+
+}
+
+
+
+.box {
+
+	background-color: @white;
+	color: @black;
+	font-family: 'Estandar Rounded';
+
+	border-radius: 40px;
+
+	@media @tablet {
+	
+	margin-top: 55px;
+	
+	}
+
+	padding: 6%;
+
+
+	@media @tablet {
+
+	border-radius: 80px;
+
+	min-height: 670px;
+	padding: 6%;
+
+	}
+
+	.centered-img {
+
+		margin-bottom: 20px;
+
+		@media @tablet {
+		
+		margin-bottom: 60px;
+		
+		}
+
+	}
+
+	p {
+
+		font-size: 0.6em;
+
+		@media @tablet {
+
+		font-size: 1.1em;
+
+		}
+
+	}
+
+}
+
+body.home {
+
+	background-image: url(../img/bg-simple.jpg);
+	background-repeat: no-repeat;
+
+	background-size: cover;
+
+	@media @tablet {
+	
+	background-size: cover;
+	
+	}
+
+	@media @desktop {
+
+	background-size: cover;
+
+
+	}
+
+	@media @large {
+
+	background-size: cover;
+
+	}
+
+	@media @xlarge {
+	
+	background-size: cover;
+	background-repeat: repeat-y;
+	
+	}
+
+	section {
+
+		background-size: contain;
+		background-position: left top, right top;
+		background-repeat: no-repeat, no-repeat;
+
+		@media @tablet {
+
+		background-size: contain;
+
+		}
+
+		@media @desktop {
+
+
+		background-size: cover;
+
+		}
+
+		@media @large {
+
+		background-size: cover;
+
+		}
+
+	}
+
+
+	#home {
+
+
+		background-image: url(../img/bg-home-left.png), url(../img/bg-home-right.png);
+
+		background-position: left top, right top;
+
+		min-height: 518px;
+
+		@media @tablet {
+
+		background-position: left top, right top;
+
+		min-height: 960px;
+
+		}
+
+		@media @desktop {
+
+
+		min-height: 1600px;
+
+		}
+
+		@media @large {
+
+		min-height: 1600px;
+
+		}
+
+		@media @xlarge {
+
+		min-height: 2000px;
+
+		}
+
+		h1 {
+
+			text-align: center;
+			background-image: url(../img/section-home-title.png);
+
+			margin: 50px auto 15px auto;
+			background-size: 160px 159px;
+			width: 160px;
+			height: 159px;
+
+			@media @tablet {
+			margin: 135px auto 25px auto;
+			background-size: 250px 249px;
+			width: 250px;
+			height: 249px;
+			}
+
+			@media @desktop {
+			margin: 175px auto 35px auto;
+			background-size: 350px 348px;
+			width: 350px;
+			height: 348px;
+			}
+
+			@media @large {
+			margin: 175px auto 45px auto;
+			background-size: 465px 462px;
+			width: 465px;
+			height: 462px;
+			}
+
+			position: relative;
+
+
+			span {
+
+				display: none;
+
+			}
+
+		}
+
+		h2 {
+
+			font-family: 'EstandarRoundedBold';
+			letter-spacing: 0.02em;
+
+			background: rgba(132, 93, 37, 0.85);
+			border-radius: 50px;
+
+			color: @white;
+			display: inline-block;
+			text-align: center;
+
+			position: relative;
+			margin: 0 auto;
+
+			font-size: 0.8em;
+			padding: 9px 12px 8px 12px;
+
+			@media @tablet {
+
+			font-size: 1.2em;
+			padding: 11px 15px 10px 15px;
+
+			}
+
+			@media @desktop {
+
+			font-size: 1.6em;
+			padding: 21px 25px 19px 25px;
+
+			}
+
+
+			@media @large {
+
+			font-size: 2.3em;
+			padding: 21px 25px 19px 25px;
+
+			}
+
+
+		}
+
+	}
+
+	#video {
+
+
+		background-image: url(../img/bg-video-left.png), url(../img/bg-video-right.png);
+
+		min-height: 235px;
+
+		@media @tablet {
+
+		min-height: 480px;
+
+		}
+
+		@media @desktop {
+
+		min-height: 800px;
+
+		}
+
+		@media @large {
+
+		min-height: 800px;
+
+		}
+
+		@media @xlarge {
+
+		min-height: 1200px;
+
+		}
+
+		.container {
+
+			padding: 0 15%;
+
+			@media @tablet {
+
+			padding: 0 6%;
+
+			}
+
+			@media @desktop {
+
+			padding: 0 10.5%;
+
+
+			}
+
+		}
+
+		.video-responsive {
+
+		    overflow: hidden;
+		    padding-bottom: 56.25%;
+		    position: relative;
+		    height: 0;
+
+		    margin-top: 0px;
+
+		    @media @desktop {
+
+		    margin-top: 70px;
+
+		    }
+
+		    @media @large {
+
+		    margin-top: 100px;
+
+		    }
+
+		}
+
+		.video-responsive iframe {
+
+		    left: 0;
+		    top: 0;
+		    height: 100%;
+		    width: 100%;
+		    position: absolute;
+
+		}
+
+	}
+
+	#catalog {
+
+
+		background-image: url(../img/bg-catalog-left.png), url(../img/bg-catalog-right.png);
+
+		min-height: 260px;
+
+		@media @tablet {
+
+		min-height: 480px;
+
+		}
+
+		@media @desktop {
+
+		min-height: 800px;
+
+		}
+
+		@media @large {
+
+		min-height: 800px;
+
+		}
+
+
+		@media @xlarge {
+
+		min-height: 1200px;
+
+		}
+
+
+	}
+
+	#requirements {
+
+		background-image: url(../img/bg-requirements-left.png), url(../img/bg-requirements-right.png);
+
+
+		min-height: 234px;
+
+		@media @tablet {
+
+		min-height: 480px;
+
+		}
+
+		@media @desktop {
+
+		min-height: 800px;
+
+		}
+
+		@media @large {
+
+		min-height: 800px;
+
+		}
+
+		@media @xlarge {
+
+		min-height: 1100px;
+
+		}
+
+		.container {
+
+			padding: 5% 6% 5% 6%;
+
+			@media @tablet {
+
+			padding: 1% 6% 0 6%;
+
+			}
+
+
+		}
+
+	}
+
+
+	#sponsors {
+
+
+
+		background-image: url(../img/bg-sponsors-left.png), url(../img/bg-sponsors-right.png);
+
+
+		min-height: 260px;
+
+		@media @tablet {
+
+		min-height: 480px;
+
+		}
+
+		@media @desktop {
+
+		min-height: 800px;
+
+		}
+
+		@media @large {
+
+		min-height: 800px;
+
+		}
+
+		@media @xlarge {
+
+		min-height: 1100px;
+
+		}
+
+		.container {
+
+			padding: 5% 6% 5% 6%;
+
+			@media @tablet {
+
+			padding: 1% 6% 0 6%;
+
+			}
+
+
+		}
+
+		.carousel {
+
+			background-color: @white;
+
+			border-radius: 40px;
+
+			@media @tablet {
+			
+			border-radius: 80px;
+			
+			}
+
+
+		}
+
+		.carousel-control {
+
+			background-image: none !important;
+
+		}
+
+	}
+
+	#contact {
+
+		background-image: url(../img/bg-contact-left.png), url(../img/bg-contact-right.png);
+
+		min-height: 260px;
+
+		@media @tablet {
+
+		min-height: 480px;
+
+		}
+
+		@media @desktop {
+
+		min-height: 640px;
+
+		}
+
+		@media @large {
+
+		min-height: 800px;
+
+		}
+
+
+		.wrapper {
+
+			background: rgba(121, 77, 41, 0.85);
+			padding-bottom: 30px;
+
+
+
+		}
+
+		h1 {
+
+			color: #ffdc39;
+
+			margin-top: 60px;
+
+			@media @large {
+
+
+			}
+
+		}
+
+
+	}
+
+	#disclaimer {
+
+
+		background-image: url(../img/bg-disclaimer-left.png), url(../img/bg-disclaimer-right.png);
+
+		min-height: 260px;
+
+		@media @tablet {
+
+		min-height: 480px;
+
+		}
+
+		@media @desktop {
+
+		min-height: 640px;
+
+		}
+
+		@media @large {
+
+		min-height: 800px;
+
+		}
+
+
+		.container {
+
+			padding: 5% 6% 5% 6%;
+
+			@media @tablet {
+
+			padding: 1% 6% 0 6%;
+
+			}
+
+
+		}
+
+
+	}
+
+	#footer {
+
+
+		background-image: url(../img/bg-footer.png);
+		background-size: cover !important;
+
+		min-height: 260px;
+
+		@media @tablet {
+
+		min-height: 480px;
+
+		}
+
+		@media @desktop {
+
+		min-height: 800px;
+
+		}
+
+		@media @large {
+
+		min-height: 800px;
+
+		}
+
+
+	}
+}
